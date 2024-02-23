@@ -18,8 +18,35 @@
   <body>
     <div class="app-wrapper">
       <div class="content display-flex">
-        <div class="header"></div>
-        <aside id="sidebar"></aside>
+        <div class="header display-flex justify-flex-end align-i-center">
+          <a href="#" class="text-color-white btn">effettua l'upgrade</a>
+        </div>
+        <aside id="sidebar" class="display-flex flex-column">
+          <div class="top-menu">
+            <a href="#"><img src="./img/logo.svg" alt="logo" id="desktop"></a>
+            <a href="#"><img src="./img/logo-small.svg" alt="logomobile" id="logomobile"></a>
+          </div>
+          <ul class="display-flex flex-column list-menu">
+            <li id="bord-left">
+              <a href="#">
+                <img src="./img/home.svg" alt="home">
+                <span class="text-color-grey">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/search.svg" alt="search">
+                <span class="text-color-grey">Cerca</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/libreria.svg" alt="library">
+                <span class="text-color-grey">La tua libreria</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
         <main>
           <section id="nav-main">
             <nav class="mainnav">
@@ -134,7 +161,9 @@
           </section>
         </main>
       </div>
-      <div id="toolbar"></div>
+      <div id="toolbar">
+
+      </div>
     </div>
   </body>
 </html>
