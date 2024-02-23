@@ -1,0 +1,39 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: var();
+}
+
+#toolbar {
+    height: 90px;
+    background-color: var();
+}
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: var();
+}
+
+#sidebar {
+    width: 200px;
+    background-color: var();
+}
+
+main {
+    width: calc(100% - 200px);
+    background-color: var();
+    padding-top: 100px ;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.418);
+    width: calc(100% - 200px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+}
