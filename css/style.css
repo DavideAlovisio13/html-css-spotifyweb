@@ -113,12 +113,12 @@ main {
 
 /* albums-row */
 
-.albums-row {
+.playlistrow {
   width: 100%;
   padding: 30px 0;
 }
 
-.albums-row h2 {
+.playlistrow h2 {
   font-size: 1.8em;
   font-weight: 700;
 }
@@ -127,13 +127,36 @@ main {
   margin-top: 30px;
 }
 
+.img-item {
+  aspect-ratio: 1 / 1;
+  position: relative;
+  cursor: pointer;
+}
+
 .img-item img {
   display: block;
   max-width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  margin-bottom: 10px;
-  cursor: pointer;
+  height: 100%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  transition: filter 0.5s;
+}
+
+.img-item i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+}
+
+.img-item:hover img {
+  filter: opacity(0.5);
+}
+
+.img-item:hover i {
+  display: block;
 }
 
 .items {
@@ -148,4 +171,10 @@ main {
 
 .items p {
   font-size: 0.8em;
+}
+
+.border-rad {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
