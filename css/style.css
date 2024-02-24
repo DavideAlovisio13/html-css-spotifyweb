@@ -212,6 +212,7 @@ main {
 
 .list-menu {
   padding: 0px 15px;
+  margin-bottom: 15px;
 }
 
 .list-menu li {
@@ -248,10 +249,11 @@ main {
 .playlist-left h5 {
   margin-left: 20px;
   text-transform: uppercase;
+  font-size: 1em;
 }
 
 .playlist-left ul {
-  padding: 20px 0;
+  padding: 20px 0 130px;
 }
 
 .playlist-left li {
@@ -270,7 +272,7 @@ main {
   color: var(--color-color-text1);
 }
 
-.playlist-left .fa-solid {
+.playlist-left .fa-square-plus {
   font-size: 50px;
 }
 
