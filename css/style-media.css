@@ -1,0 +1,154 @@
+/* media query */
+
+/* desktop first */
+
+@media screen and (max-width: 1200px) {
+  .items {
+    width: calc((100% / 4) - 20px);
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 992px) {
+
+  h2 {
+    font-size: 1em;
+  }
+  .items {
+    width: calc((100% / 3) - 20px);
+  }
+
+  .items h4 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center-too {
+    margin: 0px 20px;
+  }
+
+  #options-too ul {
+    display: block;
+  }
+  #options-too ul li {
+    padding-left: 5px;
+  }
+
+  .top-controls i {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .ul-right i {
+    font-size: 0.9em;
+  }
+
+  #options-too li .fa-regular {
+    font-size: 1em;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+  #sidebar {
+    width: 60px;
+  }
+
+  .header {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+
+  main {
+    width: calc(100% - 60px);
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #logomobile {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 80px;
+  }
+
+  .items {
+    width: calc((100% / 2) - 20px);
+  }
+
+  .list-menu a span {
+    display: none;
+  }
+
+  .list-menu a img {
+    padding-left: 15px;
+    width: 60px;
+  }
+
+  #first-playlist {
+    display: none;
+  }
+
+  .playlist-left h5 {
+    display: none;
+  }
+
+  .playlist-left a {
+    display: none;
+  }
+
+  .plus-first i {
+    cursor: pointer;
+  }
+
+  .app-install {
+    position: relative;
+    border-bottom: transparent;
+  }
+
+  .app-install img {
+    position: absolute;
+    bottom: 1px;
+    left: 7px;
+  }
+  .app-install p {
+    display: none;
+  }
+
+  .user h4 {
+    display: none;
+  }
+
+  .app-install {
+    margin-top: 110px;
+  }
+
+  .playlist-left li {
+    padding-left: 8px;
+  }
+
+  .app-install img {
+    padding-left: 0px;
+  }
+
+  .img-user {
+    margin: 15px 0px 0px 8px;
+  }
+
+  .top-controls i {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .ul-right i {
+    font-size: 0.7em;
+  }
+
+  #options-too li .fa-regular {
+    font-size: 0.8em;
+  }
+}

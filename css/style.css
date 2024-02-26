@@ -12,20 +12,21 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 .app-wrapper {
   height: 100vh;
   overflow: hidden;
-  background-color: var();
+}
+
+.content {
+  height: calc(100vh - 90px);
+  width: 100%;
 }
 
 #toolbar {
   height: 90px;
-  background-color: var();
-}
-.content {
-  height: calc(100vh - 90px);
-  width: 100%;
-  background-color: var();
+  position: relative;
+  background-color: var(--color-bg-toolbar);
 }
 
 #sidebar {
@@ -33,6 +34,20 @@ body {
   background-color: var(--color-bg-sidebar);
   padding-top: 20px;
 }
+
+.text-center {
+text-align: center;
+}
+
+.text-color-grey {
+  color: var(--color-color-text2);
+}
+
+.text-color-white {
+  color: var(--color-color-text1);
+}
+
+/* header */
 
 .header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -58,23 +73,156 @@ body {
 .btn:hover {
   transform: scale(1.1);
 }
-#toolbar {
-  position: relative;
-  z-index: 1000;
-  background-color: var(--color-bg-toolbar);
+
+/* aside*/
+
+#desktop {
+  padding-left: 20px;
+  padding-bottom: 80px;
+  width: 130px;
 }
 
-.text-center {
-  text-align: center;
+#logomobile {
+  width: 50px;
+  display: none;
 }
 
-.text-color-grey {
-  color: var(--color-color-text2);
+/* top-menu */
+
+.list-menu {
+  padding: 0px 15px;
+  margin-top: -70px;
 }
 
-.text-color-white {
+.list-menu li {
+  padding: 10px 0px;
+  margin-left: -15px;
+  transition: border 0.3s;
+}
+
+.list-menu li:hover {
+  border-left: 3px solid var(--color-bg-border);
+}
+
+.list-menu span:hover {
   color: var(--color-color-text1);
 }
+
+.list-menu a img {
+  display: inline-block;
+  width: 50px;
+  padding-right: 12px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.list-menu a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#bord-left {
+  border-left: 3px solid var(--color-bg-border);
+}
+
+/* playlist menu */
+
+.playlist-left {
+  overflow-y: auto;
+}
+
+.playlist-left::-webkit-scrollbar {
+  display: none;
+}
+
+
+.playlist-left h5 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.playlist-left ul {
+  padding: 20px 0 50px;
+}
+
+.playlist-left li {
+  font-size: 0.9em;
+  margin: 20px 0px;
+  padding: 0px 20px;
+  border-left: solid 1px transparent;
+  transition: border 0.5s;
+}
+
+.playlist-left li:hover {
+  border-left: 3px solid var(--color-bg-border);
+}
+
+.playlist-left a:hover {
+  color: var(--color-color-text1);
+}
+
+.playlist-left .fa-square-plus {
+  font-size: 50px;
+}
+
+#first-playlist {
+  padding-left: 5px;
+}
+
+#bot-line {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* bottom menu  */
+
+.app-install {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--color-color-text2);
+}
+
+.app-install p {
+  padding-left: 10px;
+}
+
+.app-install img {
+  width: 30px;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  filter: invert(72%) sepia(10%) saturate(32%) hue-rotate(318deg)
+    brightness(87%) contrast(96%);
+}
+
+.app-install:hover a {
+  color: var(--color-color-text1);
+}
+
+.img-user {
+  width: 40px;
+  height: 40px;
+  margin: 15px 0px 0px 20px;
+  border-radius: 50%;
+  background-color: var(--color-color-text2);
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.img-user img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.user h4 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
 /* main */
 
 main {
@@ -137,8 +285,10 @@ main {
 }
 
 .playlistrow h2 {
-  font-size: 1.8em;
+  display: block;
+  font-size: 1.5em;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 .row {
@@ -146,16 +296,15 @@ main {
 }
 
 .img-item {
-  aspect-ratio: 1 / 1;
   position: relative;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .img-item img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  margin-bottom: 15px;
   object-fit: cover;
   transition: filter 0.5s;
 }
@@ -199,132 +348,16 @@ main {
   margin-bottom: 10px;
 }
 
-/* aside*/
+/* toolbar */
 
-#desktop {
-  padding-left: 20px;
-  padding-bottom: 80px;
-  width: 130px;
-}
-
-#logomobile {
-  width: 40px;
-  display: none;
-}
-
-.list-menu {
-  padding: 0px 15px;
-  margin-top: -70px;
-}
-
-.list-menu li {
-  padding: 10px 0px;
-  margin-left: -15px;
-  transition: border 0.3s;
-}
-
-.list-menu li:hover {
-  border-left: 3px solid var(--color-bg-border);
-}
-
-.list-menu span:hover {
-  color: var(--color-color-text1);
-}
-
-.list-menu a img {
-  display: inline-block;
-  width: 50px;
-  padding-right: 12px;
-  padding-left: 10px;
-  vertical-align: middle;
-}
-
-.list-menu a span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#bord-left {
-  border-left: 3px solid var(--color-bg-border);
-}
-
-.playlist-left h5 {
-  margin-left: 20px;
-  text-transform: uppercase;
-  font-size: 1em;
-}
-
-.playlist-left ul {
-  padding: 20px 0 130px;
-}
-
-.playlist-left li {
-  font-size: 0.9em;
-  margin: 20px 0px;
-  padding: 0px 20px;
-  border-left: solid 1px transparent;
-  transition: border 0.5s;
-}
-
-.playlist-left li:hover {
-  border-left: 3px solid var(--color-bg-border);
-}
-
-.playlist-left a:hover {
-  color: var(--color-color-text1);
-}
-
-.playlist-left .fa-square-plus {
-  font-size: 50px;
-}
-
-#first-playlist {
-  padding-left: 5px;
-}
-
-#bot-line {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.app-install {
-  width: 90%;
-  margin: 0px auto;
-  margin-top: -50px;
-  border-bottom: 1px solid var(--color-color-text2);
-}
-
-.app-install img {
-  width: 30px;
-  vertical-align: middle;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  filter: invert(72%) sepia(10%) saturate(32%) hue-rotate(318deg)
-    brightness(87%) contrast(96%);
-}
-
-.app-install:hover a {
-  color: var(--color-color-text1);
-}
-
-.img-user {
-  width: 40px;
-  padding: 15px 0px 0px 20px;
-  border-radius: 50%;
-  background-color: var(--color-color-text2);
-  overflow: hidden;
-}
-
-.img-user img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* left-too */
 
 .left-too {
+  width: 33.3%;
   position: relative;
   padding: 20px 0px 20px 10px;
 }
+
 #player-too img {
   width: 45px;
   margin-right: 10px;
@@ -354,8 +387,14 @@ main {
   color: var(--color-color-text1);
 }
 
+#options-too i {
+  font-size: 0.7em;
+}
+
+/* center-too */
+
 .center-too {
-  width: 530px;
+  width: 33.3%;
 }
 
 .top-controls {
@@ -365,7 +404,7 @@ main {
 
 .top-controls i {
   transition: transform 0.5s;
-  font-size: 32px;
+  font-size: 1.5em;
   padding: 0px 15px;
 }
 
@@ -377,15 +416,23 @@ main {
   width: 100%;
 }
 
+/* right-too */
+
 .right-too {
-  width: 220px;
+  width: 33.3%;
 }
+
 #bar {
   margin: 0px 20px;
   width: 100%;
   height: 3px;
   border-radius: 2px;
   background-color: var(--color-color-text2);
+}
+
+#prog:hover {
+  background-color: var(--color-bg-border);
+  cursor: pointer;
 }
 
 #prog {
@@ -399,9 +446,12 @@ main {
 }
 
 .right-too i {
-  padding-right: 15px;
+  padding-right: 0.7em;
 }
 
+.right-too i:hover {
+  color: var(--color-color-text1);
+}
 .volume {
   position: relative;
   height: 3px;
@@ -409,6 +459,7 @@ main {
   border-radius: 2px;
   background-color: var(--color-color-text2);
   margin-top: 8px;
+  margin-right: 10px;
 }
 
 #prog2 {
@@ -418,19 +469,7 @@ main {
   cursor: pointer;
 }
 
-#dot {
-  color: transparent;
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 20px;
-  cursor: pointer;
-}
-
 #prog2:hover {
   background-color: var(--color-bg-border);
 }
 
-#prog2:hover #dot {
-  color: var(--color-color-text1);
-}
