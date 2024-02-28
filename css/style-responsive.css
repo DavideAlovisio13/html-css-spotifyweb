@@ -163,3 +163,8 @@
     font-size: 0.7em;
   }
 }
+@media screen and (max-height: 200px) {
+  .header {
+    display: none;
+  }
+}

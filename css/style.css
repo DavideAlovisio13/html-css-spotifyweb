@@ -487,18 +487,7 @@ main {
   cursor: pointer;
 }
 
-#prog2::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-color-text1);
-  border-radius: 50%;
-  position: absolute;
-  left: 30%;
-  bottom: -3px;
-  display: block;
-}
-
 #prog2:hover {
   background-color: var(--color-bg-border);
 }
+
