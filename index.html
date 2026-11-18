@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Replica dell'interfaccia web di Spotify in HTML e CSS, responsive." />
+    <link rel="icon" href="./img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="./css/style-reset.css" />
     <link rel="stylesheet" href="./css/style-flex.css" />
     <link rel="stylesheet" href="./css/style-responsive.css" />
-    <title>Spotify</title>
+    <title>Spotify · replica in HTML e CSS</title>
   </head>
   
   <body>
@@ -124,66 +126,65 @@
               <div class="row display-flex flex-wrap">
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/metal_lifting.jpg" alt="metal" />
+                    <img src="./img/metal_lifting.jpg" alt="Copertina della playlist Heavy Metal" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
                   <h4 class="text-color-white">Heavy Metal</h4>
-                  <p class="text-color-grey">Subtitle</p>
+                  <p class="text-color-grey">Metallica, Pantera e altri</p>
                 </div>
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/stranger.jpeg" alt="stranger" />
+                    <img src="./img/stranger.jpeg" alt="Copertina di Stranger Things, Vol. 1" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
                   <h4 class="text-color-white">
-                    Stranger Things, Vol.1 (a Netflix Original Series
-                    Soundtrack)
+                    Stranger Things, Vol. 1
                   </h4>
                   <p class="text-color-grey">Kyle Dixon & Michael Stein</p>
                 </div>
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/aquietplace.jpeg" alt="aquietplace" />
+                    <img src="./img/aquietplace.jpeg" alt="Copertina di A Quiet Place" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
-                  <h4 class="text-color-white">A quite place</h4>
-                  <p class="text-color-grey">Subtitle</p>
+                  <h4 class="text-color-white">A Quiet Place</h4>
+                  <p class="text-color-grey">Marco Beltrami</p>
                 </div>
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/split.jpeg" alt="split" />
+                    <img src="./img/split.jpeg" alt="Copertina di Split" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
                   <h4 class="text-color-white">Split</h4>
-                  <p class="text-color-grey">Subtitle</p>
+                  <p class="text-color-grey">West Dylan Thordson</p>
                 </div>
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/cure.jpeg" alt="acureforwellnes" />
+                    <img src="./img/cure.jpeg" alt="Copertina di A Cure for Wellness" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
-                  <h4 class="text-color-white">A cure for wellness</h4>
-                  <p class="text-color-grey">Subtitle</p>
+                  <h4 class="text-color-white">A Cure for Wellness</h4>
+                  <p class="text-color-grey">Benjamin Wallfisch</p>
                 </div>
                 <div class="items text-center">
                   <div class="img-item">
-                    <img src="./img/sinister.jpeg" alt="sinister" />
+                    <img src="./img/sinister.jpeg" alt="Copertina di Sinister" />
                     <i
                       class="fa-regular fa-circle-play fa-2xl text-color-white"
                     ></i>
                   </div>
                   <h4 class="text-color-white">Sinister</h4>
-                  <p class="text-color-grey">Subtitle</p>
+                  <p class="text-color-grey">Christopher Young</p>
                 </div>
               </div>
             </div>
@@ -249,21 +250,21 @@
       <div id="toolbar" class="display-flex justify-space-b">
         <div class="left-too display-flex align-i-center">
           <div id="player-too" class="display-flex align-i-center">
-            <img src="./img/sinister.jpeg" alt="sinister" />
+            <img src="./img/sinister.jpeg" alt="Copertina di Sinister" />
             <div class="name-artist">
               <h4 class="text-color-white"><strong>Sinister</strong></h4>
-              <span class="text-color-grey">Brano Nome</span>
+              <span class="text-color-grey">Christopher Young</span>
             </div>
           </div>
           <div id="options-too" class="display-flex justify-flex-end">
             <ul class="display-flex align-i-center">
               <li>
-                <a href="#"
+                <a href="#" aria-label="Salva nei preferiti"
                   ><i class="fa-regular fa-heart text-color-grey"></i
                 ></a>
               </li>
               <li>
-                <a href="#"
+                <a href="#" aria-label="Aggiungi a una playlist"
                   ><i class="fa-regular fa-folder text-color-grey"></i
                 ></a>
               </li>
@@ -274,27 +275,27 @@
           <div class="top-controls">
             <ul class="display-flex justify-center">
               <li>
-                <a href="#"
+                <a href="#" aria-label="Riproduzione casuale"
                   ><i class="fa-solid fa-shuffle text-color-white"></i
                 ></a>
               </li>
               <li>
-                <a href="#"
+                <a href="#" aria-label="Brano precedente"
                   ><i class="fa-solid fa-backward-step text-color-white"></i
                 ></a>
               </li>
               <li>
-                <a href="#"
+                <a href="#" aria-label="Riproduci"
                   ><i class="fa-regular fa-circle-play text-color-white"></i
                 ></a>
               </li>
               <li>
-                <a href="#"
+                <a href="#" aria-label="Brano successivo"
                   ><i class="fa-solid fa-forward-step text-color-white"></i
                 ></a>
               </li>
               <li>
-                <a href="#"
+                <a href="#" aria-label="Ripeti"
                   ><i class="fa-solid fa-rotate-right text-color-white"></i
                 ></a>
               </li>
@@ -309,17 +310,17 @@
         <div class="right-too display-flex align-i-center justify-flex-end">
           <ul class="display-flex ul-right">
             <li>
-              <a href="#" class="text-color-grey"
+              <a href="#" aria-label="Coda" class="text-color-grey"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </li>
             <li>
-              <a href="#" class="text-color-grey"
+              <a href="#" aria-label="Dispositivi" class="text-color-grey"
                 ><i class="fa-solid fa-desktop"></i
               ></a>
             </li>
             <li>
-              <a href="#" class="text-color-grey"
+              <a href="#" aria-label="Volume" class="text-color-grey"
                 ><i class="fa-solid fa-volume-high"></i
               ></a>
             </li>

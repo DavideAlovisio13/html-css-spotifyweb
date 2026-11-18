@@ -168,3 +168,67 @@
     display: none;
   }
 }
+
+/* ---------- Revisione 2026 ---------- */
+.items h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-bg-border);
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  /* su telefono restano copertina, titolo e comandi di riproduzione */
+  #options-too,
+  .right-too {
+    display: none !important;
+  }
+
+  .left-too {
+    width: auto;
+    flex: 0 0 auto;
+    max-width: 38%;
+  }
+
+  .center-too {
+    width: auto;
+    flex: 1;
+    margin: 0 10px 0 0;
+  }
+
+  .name-artist {
+    min-width: 0;
+  }
+
+  .name-artist h4,
+  .name-artist span {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .top-controls {
+    width: 100%;
+  }
+
+  .top-controls i {
+    padding: 0 8px;
+  }
+
+  #bar {
+    margin: 0 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
